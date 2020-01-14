@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: Lógica de Programação 
 description: Este é um tutorial sobre lógica de programação 
+show_downloads: ["false"]
