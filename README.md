@@ -1,3 +1,2 @@
-# Oficina de lógica de programação 
+# Initial page
 
-Repositório dedicado aos materiais utilizados na oficina de lógica de programação 
