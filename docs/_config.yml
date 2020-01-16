@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 # theme: jekyll-theme-cayman
 # title: Lógica de Programação 
 # description: Este é um tutorial sobre lógica de programação 
@@ -7,6 +9,7 @@
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
 
+>>>>>>> 1fe130271f1a999c90a7f9b89106c5eaf87c3d73
 
 # Setup
 title:               Lanyon
