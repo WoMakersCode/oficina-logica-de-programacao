@@ -14,8 +14,5 @@ Se você deseja se aprofundar no assunto seguem algumas recomendações de conte
 * Code Academy - https://www.codecademy.com/
 * Khan Academy - https://pt.khanacademy.org/computing/computer-programming
 * Curso em Vídeo (Gustavo Guanabara) - Python - https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0
-
-## **IDE**
-
-* Portugol Studio - https://www.youtube.com/watch?v=K02TnB3IGnQ
-* Portugol Studio Online - https://portugol-webstudio.cubos.io/ide
+* Documentação oficial do Python para iniciantes (inglês) - https://wiki.python.org/moin/BeginnersGuide
+* Site com tutoriais (inglês) - https://realpython.com/
