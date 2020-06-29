@@ -267,6 +267,8 @@ similares, mas escrito de modo diferente (sintaxe).
 
 > **Sintaxe: se refere a construção em si da linguagem, com os seus termos específicos para executar os comandos.
 
+Em Python, para pegar uma informação digitada pelo usuário usamos a função `input()`
+
 ## **Desvios Condicionais**
 
 Poderá ser necessário desviar a execução do programa, de acordo com uma ou mais condições.
@@ -304,7 +306,7 @@ if esta_chovendo:
 Exemplo:
 
 Vamos perguntar para o usuário informar sua idade e o nosso programa irá informar se ele é maior ou menor de idade.
-Para pedir para o usuário informar um valor, iremos usar a função `input`
+Para pedir para o usuário informar um valor, novamente iremos usar a função `input`
 
 ```python
 idade = int(input("Informe sua idade: "))
