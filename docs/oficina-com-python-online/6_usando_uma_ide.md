@@ -1,62 +1,50 @@
-O Portugol Studio é uma IDE desenvolvida e mantida pelo LITE (Laboratório de Inovação Tecnológica na Educação) para programar usando portugol, ou seja, a linguagem nativa em português. IDE é uma sigla em inglês que traduzida significa “Ambiente Integrado de Desenvolvimento”. Iremos utilizar esse ambiente para escrever nosso código e nos ajudar a executá-lo de maneira mais amigável.
+O Python é uma linguagem desenvolvida na década de 80 que é muito falada hoje em dia. Ela não é só utilizada em várias
+áreas da computação, como a área de dados, mas ela se mostra muito legível para quem está iniciando na programação.
 
-Programando em Portugol iremos conseguir montar uma estrutura algorítmica que, além de ser em Português, irá nos facilitar no aprendizado focado na lógica de programação.
+Além de possuir uma ampla comunidade com recursos e materiais disponíveis, existem várias ferramentas que podem ser
+utilizadas online para programar sem precisar instalar nada em seu computador.
 
-## **Instalando**
+## **Utilizando uma IDE online**
 
-Para baixar a ferramenta, acesse o site oficial http://lite.acad.univali.br/portugol/ e clique em “Download”. O Portugol Studio pode ser utilizado nos sistemas operacionais Windows, Mac e Linux.
-Além do ambiente, o site possui diversos outros recursos que podem ser consultados, como exemplos de código e documentação.
+IDE é a sigla em inglês que traduzida significa Ambiente Integrado de Desenvolvimento. Nesse ambiente existem vários
+recursos que nos auxiliam na hora de programar.
 
-## **Conhecendo a interface**
+Para essa oficina iremos utilizar o site [repl.it](https://repl.it), que é uma IDE online.
 
-Aqui vamos conhecer um pouco sobre as principais ferramentas dentro do ambiente do Portugol Studio.
+Para começar a programar clique em `start coding`
 
-## **Boas-vindas**
+![Imagem repl.it](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/repl_it.png)
 
-Ao iniciar a IDE, o Portugol Studio mostra uma tela de boas vindas com algumas dicas sobre a ferramenta. Se for a sua primeira vez utilizando-a, recomendamos ler todas as dicas para se familiarizar com o ambiente.
+Em seguida, escolha a linguagem de programação `Python`
 
-![Portugol - Tela de Dicas (Boas Vindas)](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/image12.png)
+![Imagem repl.it com Python](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/repl_it_python.png)
 
-Além de conferir as dicas, você pode inclusive trocar o tema da sua ferramenta. Para isso, basta clicar no botão “Trocar Tema”. O tema padrão é o modo escuro.
+Por fim, clique em `Create Repl`
+
+**OBS.:** Não é necessário criar uma conta para programar, no entanto é recomendado para salvar o seu código e não
+correr o risco de perder as modificações. Para isso clique em `sign up`.
 
 ## **Conhecendo a Interface**
 
-![Portugol - Interface](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/image1.png)
+Repare que ao realizar os passos acima, um arquivo chamado `main.py` aparece na tela. Esse arquivo será o arquivo 
+principal que iremos utilizar para rodar nosso programa.
 
-Na parte superior, temos alguns ícones, em ordem:
+No canto esquerdo, existem algumas opções que podem ser utilizadas. Explorando vemos que existe a possibilita de: 
+- criar outros arquivos e pastas
+- versionar o que escrevemos (não iremos usar nessa oficina, mas aqui estamos falando sobre git)
+- instalar pacotes de bibliotecas que outros programadores já escreveram
+- debbuger (permite acompanhar passo a passo o que acontece no programa)
+- configurações (permite modificar cor, fonte entre outros atributos)
 
-* **Novo Arquivo:** permite criar um documento em branco para começar a programar
-* **Abrir Arquivo:** permite abrir um arquivo em portugol (extensão .por)
-* **Ajuda:** Contém explicações sobre a sintaxe do Portugol, bem como a documentação de algumas bibliotecas (veremos mais adiante)
-* **Plugin:** Permite instalar novas extensões da IDE
+## **Rodando o primeiro comando**
 
-Na parte inferior, temos uma barra com informações sobre atalho, tela de dicas e outras informações que podem ser exploradas.
+Vamos escrever o nosso primeiro comando. Vamos escrever o texto `Olá Mundo!` na tela.
+O comando para escrever ou printar algo na tela em Python é o comando `print`. Ela é uma função (veremos mais adiante) 
+que recebe como argumento o texto, entre aspas, que será exibido.
 
-## **Criando um arquivo**
+Vamos escrever o comando e em seguida clicar em `run`
 
-![Criando um arquivo](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/image17.png)
+![Imagem repl.it](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/ola_mundo.png)
 
-1. No canto direito, temos uma seção de Exemplos que pode ser utilizada para ver como é a sintaxe de cada um dos conceitos básicos utilizados na lógica de programação. Você pode se basear nesses exemplos para escrever seu programa. No entanto, vamos primeiramente criar um novo documento clicando no ícone “Novo Arquivo”. 
+**Parabéns!** Você aprendeu a utilizar a ferramenta e executou o primeiro programa “Olá Mundo”! em Python
 
-![Primeiro programa](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/image18.png)
-_Exemplo de código escrito em portugol que imprime para o usuário o texto Olá Mundo na tela_
-
-2. Repare que em um novo arquivo a ferramenta já nos dá uma estrutura pronta de um programa. Nesse caso, ele nos fornece um programa [Olá Mundo](https://blog.nathabonfim59.com/2019/04/15/voce-sabe-de-onde-surgiu-a-tradicao-do-hello-world/) que é um programa clássico para testar um código novo em uma nova sintaxe.
-
-> Não se preocupe nesse momento com a estrutura da escrita. Por enquanto estamos nos familiarizando com a ferramenta
-
-3. Para executar o programa e ver o resultado na tela clique no botão “Executar” ou utilize o atalho Shift + F6 (Veja todos os atalhos do Portugol Studio pressionando F11)
-
-![Portugol - Executando o programa](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/image16.png)
-
-4. Para salvar o arquivo clique no símbolo do Pendrive (imagem abaixo) ou utilize o atalho Ctrl + S (Veja todos os atalhos do Portugol Studio pressionando F11)
-
-![Portugol - Salvar arquivo](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/image13.png)
-
-Todos os programas escritos em portugol por padrão são salvos por uma extensão .por
-
-Dê um nome para o seu arquivo e clique em “Salvar”
-
-![Portugol - Salvar](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/image3.png)
-
-**Parabéns!** Você aprendeu a utilizar a ferramenta do Portugol Studio e executou o primeiro programa “Olá Mundo”!
