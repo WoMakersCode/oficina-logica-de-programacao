@@ -2,14 +2,19 @@ Agora vamos aprender os conceitos básicos da lógica de programação o/
 
 ## **Variável**
 
-Variáveis são espaços situados na memória do computador onde podemos guardar valores ou expressões. Ou seja, se quisermos que o computador memorize um número para que possamos usá-lo posteriormente em alguma operação, “guardamos” esse número na memória utilizando uma variável.
+Variáveis são espaços situados na memória do computador onde podemos guardar valores ou expressões, ou seja, 
+se quisermos que o computador memorize um número para que possamos usá-lo posteriormente em alguma operação, 
+“guardamos” esse número na memória utilizando uma variável.
 
-Para compreender melhor o que são variáveis, vamos fazer uma analogia com objetos do nosso cotidiano: vamos supor que temos um armário, no qual podemos guardar diversos objetos. E o nosso objetivo é guardar uma bola nesse armário.
+Para compreender melhor o que são variáveis, vamos fazer uma analogia com objetos do nosso cotidiano: 
+vamos supor que temos um armário, no qual podemos guardar diversos objetos. E o nosso objetivo é guardar 
+uma bola nesse armário.
 
 ![Guardar bola no armário](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/image7.png)
 
 Só que somos muito organizados em relação ao que guardamos no nosso armário.
-Assim, antes de colocarmos um objeto no nosso armário, colocamos uma etiqueta na porta dizendo o **identificador** (o nome) desse objeto que está guardado naquela gaveta e de que **tipo** ele é.
+Assim, antes de colocarmos um objeto no nosso armário, colocamos uma etiqueta na porta dizendo o 
+**identificador** (o nome) desse objeto que está guardado naquela gaveta e de que **tipo** ele é.
 
 No caso da bola, colocaremos o **identificador** BOLA e dizemos que a bola é do **tipo** Brinquedo.
 
@@ -23,7 +28,8 @@ E se quiséssemos guardar o número 2:
 
 ![Variável 4](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/image10.png)
 
-Nessa analogia, pode-se entender o armário como a memória do computador, onde podemos “guardar” valores para serem usados posteriormente, mas esses valores necessitam ser identificados por um nome e por um tipo.
+Nessa analogia, pode-se entender o armário como a memória do computador, onde podemos “guardar” 
+valores para serem usados posteriormente, mas esses valores necessitam ser identificados por um nome e por um tipo.
 
 > Em resumo:
 * As variáveis são os espaços no armário
@@ -33,17 +39,22 @@ Nessa analogia, pode-se entender o armário como a memória do computador, onde 
 
 ![Variável 5](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/image6.png)
 
-_Exemplos retirados dos slides do professor Clayton dos Santos: https://docs.google.com/presentation/d/1GXHp4Y3QpX3nbEcW5j5uRgJmqMYLlXbqyd3MVYRkewQ/edit_
+[Exemplos retirados dos slides do professor Clayton dos Santos](https://docs.google.com/presentation/d/1GXHp4Y3QpX3nbEcW5j5uRgJmqMYLlXbqyd3MVYRkewQ/edit_)
 
 Veja o exemplo abaixo para armazenar o número 10:
 
-`inteiro numero = 10`
+`numero = 10`
 
-Nesse exemplo o **identificador** se chama numero, seu **valor** é o 10 e o seu **tipo** é inteiro.
+Nesse exemplo o **identificador** se chama numero, seu **valor** é o 10 e o seu **tipo** é inteiro*.
+
+> ***Nota:** Em Python não é necessário especificar o tipo de dado para declarar as variáveis, mas em algumas linguagens 
+> isso é necessário. O Python tem uma tipagem dinâmica e depende somente do seu conteúdo armazenado.  Pelo fato da 
+> variável `numero` estar armazenando o inteiro 10, o Python já tipa dinamicamente essa variável para inteiro.
 
 ## **Identificadores**
 
-Toda vez que criamos uma variável precisamos dar um nome a ela. E dando um nome estamos identificando uma variável para usarmos novamente em outro momento.
+Toda vez que criamos uma variável precisamos dar um nome a ela. E dando um nome estamos identificando uma variável 
+para usarmos novamente em outro momento.
 
 Para nomear uma variável, na maioria das sintaxes do algoritmo precisamos estar atentos a algumas regras:
 
@@ -55,63 +66,74 @@ Para nomear uma variável, na maioria das sintaxes do algoritmo precisamos estar
 * Não pode ser uma palavra reservada**;
 
 > **São palavras que a linguagem de programação entende como um comando próprio
-Exemplos: funcao, escreva, se, programa
+Exemplos: print, def, if, while
 
 ## **Tipos de Dados**
 
 ### **Inteiro** 
-Consiste dos números inteiros, positivos e negativos, e do resultado das operações de adição, subtração, multiplicação, divisão inteira e resto.
+Consiste dos números inteiros, positivos e negativos, e do resultado das operações de adição, subtração, 
+multiplicação, divisão inteira e resto.
 
 Exemplo: 
 
-`inteiro idade = 21`
+`idade = 21`
 
-`inteiro numero_negativo = -23`
+`numero_negativo = -23`
+
+Para verificar o tipo dessa variável vamos usar a função type e exibir o resultado com o comando print conforme abaixo:
+
+`print(type(idade))`
+
+O retorno será um tipo inteiro, que em Python chamamos de int: `<class 'int'>`
 
 ### **Real** 
-Consiste dos números reais e do resultado das operações de adição, subtração, multiplicação, divisão. Na linguagem Portugol, os números reais são caracterizados por possuírem uma parte inteira e uma parte fracionária. Por exemplo, as partes inteira e fracionária do número real 3.141596 são 3 e 141596, respectivamente. Note que um “ponto” e não uma vírgula é usado para separar as partes inteira e fracionária.
+Consiste dos números reais e do resultado das operações de adição, subtração, multiplicação, divisão. 
+Na linguagem Portugol, os números reais são caracterizados por possuírem uma parte inteira e uma parte fracionária. 
+Por exemplo, as partes inteira e fracionária do número real 3.141596 são 3 e 141596, respectivamente. 
+ que um “ponto” e não uma vírgula é usado para separar as partes inteira e fracionária.
 
-> Como sabemos, os números reais incluem os números inteiros. No entanto, para evitar ambiguidades na escrita de algoritmos, assumimos que todo número escrito sem a parte fracionária é do tipo inteiro
-
-Exemplo:
-
-`real temperatura = 38`
-
-`real saldo_bancario = -29.89`
-
-### **Caractere** 
-Consiste de um único símbolo, como uma letra do alfabeto, os dígitos numéricos positivos e negativos (0, 1, . . . , 9), entre muitos outros símbolos**. Os elementos do conjunto de valores do tipo caractere devem ser escritos, nos algoritmos do Portugol, entre aspas simples.
+> Como sabemos, os números reais incluem os números inteiros. No entanto, para evitar ambiguidades na escrita 
+> de algoritmos, assumimos que todo número escrito sem a parte fracionária é do tipo inteiro
 
 Exemplo:
 
-`caracter ligado = 's'`
+`temperatura = 38.5`
 
-> Todos os demais símbolos podem ser consultados [nessa tabela](https://www.matematica.pt/util/resumos/tabela-ascii.php).
+`saldo_bancario = -29.89`
 
-### **Cadeia** 
-Consiste de uma concatenação** de símbolos (cadeia de caracteres). Os elementos do conjunto de valores do tipo cadeia devem ser escritos, nos algoritmos do Portugol, entre aspas duplas.
+Se usarmos a mesma função `type` que vimos anteriormente, veremos que o retorno será um tipo real ou decimal, que em 
+Python chamamos de float: `<class 'float'>`
+
+### **Texto** 
+Consiste de um único símbolo, como uma letra do alfabeto, os dígitos numéricos positivos e negativos (0, 1, . . . , 9), 
+entre muitos outros símbolos* ou o conjunto (concatenação**) desses símbolos. Para representá-los usamos aspas simples 
+ou duplas.
+
+> ** Todos os demais símbolos podem ser consultados [nessa tabela](https://www.matematica.pt/util/resumos/tabela-ascii.php).
+
+> **Concatenação é a operação de unir um ou mais elementos
 
 
 Exemplo:
 
-`cadeia frase = "Esta e uma frase formada por caracteres”`
+`ligado = 's'`
 
-`cadeia vazia = ""` (*)
+`frase = "Esta e uma frase formada por caracteres”`
 
+`string_vazia = ""` (*)
 
-> **concatenação: é a operação de unir um ou mais elementos
 
 > (*) Há um elemento especial, “”, que é denominado de palavra vazia, pois não possui nenhum símbolo.
 
 
 ### **Lógico** 
-Inclui apenas os valores lógicos falso ou verdadeiro.
+Inclui apenas os valores lógicos falso (em inglês `false`) ou verdadeiro (em inglês `true`).
 
 Exemplo:
 
-`logico ligado = verdadeiro`
+`ligado = True`
 
-`logico esta_frio = falso`
+`esta_frio = False`
 
 ## **Operadores Aritméticos**
 
@@ -122,8 +144,6 @@ Os operadores aritméticos são aqueles que permitem realizar as operações bá
 Permite adicionar valores. Representado pelo símbolo +
 
 Exemplo:
-
-`inteiro valor1, valor2`
 
 `valor1 = 2`
 
@@ -137,8 +157,6 @@ Permite subtrair valores. É representado pelo símbolo -
 
 Exemplo:
 
-`inteiro valor1, valor2`
-
 `valor1 = 2`
 
 `valor2 = 5`
@@ -151,8 +169,6 @@ Permite multiplicar valores. Representado pelo símbolo *
 
 Exemplo:
 
-`inteiro valor1, valor2`
-
 `valor1 = 2`
 
 `valor2 = 5`
@@ -161,11 +177,13 @@ Exemplo:
 
 ### **Divisão** 
 
-A divisão é compreendida por duas operações, a divisão e o resto. Ou seja, na programação, é possível obter o resultado dessas duas operações, tal como em um cálculo normal. Para realizar a divisão, utilizamos o símbolo / . Se a divisão envolve números inteiros, ele retornará o valor inteiro da divisão. Se for número real, ele retornará o valor da divisão com as casas decimais. Já para obter o resto (ou módulo), utilizamos o símbolo %. Lembrando que o resto sempre se dá em relação a uma divisão inteira.
+A divisão é compreendida por duas operações, a divisão e o resto. Ou seja, na programação, é possível obter o resultado 
+dessas duas operações, tal como em um cálculo normal. Para realizar a divisão, utilizamos o símbolo / . 
+Se a divisão envolve números inteiros, ele retornará o valor inteiro da divisão. Se for número real, 
+ele retornará o valor da divisão com as casas decimais. Já para obter o resto (ou módulo), utilizamos o símbolo %. 
+Lembrando que o resto sempre se dá em relação a uma divisão inteira.
 
 Exemplo:
-
-`inteiro valor1, valor2`
 
 `valor1 = 2`
 
@@ -183,51 +201,71 @@ Veja os exemplos:
 
 `Exemplo 2: (3 + 7) * 2 => 10 * 2 -> 20`
 
-Ou seja, realizamos sempre o que se está entre parênteses por primeiro. Depois, as multiplicações e divisões. E por fim, as somas e subtrações. No caso de mais de uma operação do mesmo tipo, a prioridade é da esquerda para direita.
+Ou seja, realizamos sempre o que se está entre parênteses por primeiro. Depois, as multiplicações e divisões. 
+E por fim, as somas e subtrações. No caso de mais de uma operação do mesmo tipo, a prioridade é da esquerda para 
+direita.
 
 ## **Operadores Lógicos**
 
 São operadores que fornecem como resultado um valor lógico (verdadeiro ou falso).
-Os operadores E e OU são operadores binários e o NAO é um operador unário.
+Os operadores E (em inglês `and`) e OU (em inglês `or`) são operadores binários e o NAO (em inglês `not`) é um operador 
+unário.
 
 ![Operadores lógicos](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/operadores_logicos.png)
 
-### E:
+### E (and):
 Operador que resulta VERDADEIRO somente se seus dois operandos lógicos forem verdadeiros.
 
-### Ou:
+`10 < 20 and 20 > 30`
+
+### Ou (or):
 Operador que resulta VERDADEIRO quando um dos seus operandos lógicos for verdadeiro.
 
-### Nao:
+`10 < 20 or 20 > 30`
+
+### Nao (not):
 Operador unário de negação.
 
-> nao VERDADEIRO = FALSO
-
-> nao FALSO = VERDADEIRO
+`not True`: resultado `False`
+`not False`: resultado `True`
 
 Tem a maior precedência entre os operadores lógicos.
 
-### Xou:
+### Xou (xor):
 Operador que resulta VERDADEIRO se seus dois operandos lógicos forem diferentes, e FALSO se forem iguais.
+Também chamado de `ou exclusivo`.
+
+`1 ^ 1`: resultado `0` (Falso)
+`0 ^ 1`: resultado `1` (Verdadeiro) 
 
 ## **Operadores Relacionais**
+
+São utilizados para comparar valores. Normalmente utilizamos em um bloco condicional
+
 Tipo   | Descrição
 --------- | ------
-= | Igual
-=/= | Diferente
+== | Igual
+!= | Diferente
 \> | Maior
 \>= | Maior ou igual
 < | Menor
 <= | Menor ou igual
+
+> **Nota:** Quando vimos na seção de variáveis vimos que para declarar uma variável bastaria escrever seu identificador
+> (nome), colocar o símbolo de atribuição (=) e logo depois o seu valor (conteúdo). Repare que esse símbolo (=) é 
+> diferente do símbolo de igual do operador relacional. Em resumo: == (igualdade) e = (atribuição)
 
 ## **Escrevendo o primeiro programa**
 
 ### Enunciado 
 Vamos escrever um algoritmo que tem como objetivo receber um nome e exibir na tela `"Olá <Nome Digitado>!"`
 
-Note que para escrever um programa precisaremos utilizar, além dos conceitos básicos de programação, alguns comandos específicos da linguagem Portugol. Esses comandos fazem parte da sintaxe** da linguagem e é importante entender como eles funcionam. Cada linguagem tem seus próprios comandos, com os conceitos básicos bem similares, mas escrito de modo diferente (sintaxe).
+Note que para escrever um programa precisaremos utilizar, além dos conceitos básicos de programação, 
+alguns comandos específicos da linguagem Python. Esses comandos fazem parte da sintaxe** da linguagem e é 
+importante entender como eles funcionam. Cada linguagem tem seus próprios comandos, com os conceitos básicos bem 
+similares, mas escrito de modo diferente (sintaxe).
 
-> **sintaxe: se refere a construção em si da linguagem, com os seus termos específicos para executar os comandos.
+> **Sintaxe: se refere a construção em si da linguagem, com os seus termos específicos para executar os comandos.
 
 ## **Desvios Condicionais**
 
@@ -240,192 +278,163 @@ Poderá ser necessário desviar a execução do programa, de acordo com uma ou m
 ### Desvio condicional simples
 
 ```
-se (condição) {
+if condição:
     <instruções>
-}
 ```
 
 ### Desvio condicional composto
 ```
-se (condição) {
+if condicao:
     <instruções>
-senao
+else:
     <instruções>
-}
+```
+
+> **Nota:** Repare que depois do sinal de dois pontos (:) precisamos dar uma tabulação (espaço) pois em Python 
+> trabalharemos com o conceito de blocos através da identação. Nesse caso específico estamos criando um bloco condicional.
+
+Exemplo:
+
+```python
+esta_chovendo = True
+if esta_chovendo:
+   print("Levar guarda-chuva")
 ```
 
 Exemplo:
 
+Vamos perguntar para o usuário informar sua idade e o nosso programa irá informar se ele é maior ou menor de idade.
+Para pedir para o usuário informar um valor, iremos usar a função `input`
+
+```python
+idade = int(input("Informe sua idade: "))
+
+if idade < 18: 
+    print("Você é menor de idade")
+else:
+    print("Você é maior de idade")
 ```
-logico esta_chovendo = verdadeiro
-se esta_chovendo {
-   escreval("Levar guarda-chuva")
-}
+
+> **Nota:** Você deve estar se perguntando por que precisamos usar esse `int` ao redor da nossa função `input`.
+> Dica: experimente ver qual é o valor que está sendo armazenado na variável `idade` se não estivéssemos usando a
+> função `int`. Veja como o restante do código irá se comportar.  
+
+### Desvio condicional composto com condição
+
+Aqui conseguimos validar uma primeira condição (em inglês `if`), se ela for falsa, validamos uma 
+segunda condição (`elif`, abreviação de `else` + `if`) e assim por diante. No final, podemos colocar 
+um senão (em inglês `else`) que significa que se nenhuma das condições anteriores forem satisfeitas, essa
+instrução será executada.
+
+```
+if condicao:
+    <instruções>
+elif condicao_2:
+    <instruções>
+else:
+    <instruções>
 ```
 
 Exemplo:
 
-```
-programa
-{ 
-	funcao inicio ()
-	{ 	
-		inteiro menor, idade
-		
-		escreva("Informe sua idade: ")
-		leia(idade)
-	
-		se (idade < 18) 
-		{
-			escreva("Você é menor de idade")
-		} 
-		senao
-		{
-			escreva("Você é maior de idade")
-		}
+Vamos perguntar para o usuário informar sua idade e nosso programa irá dizer a se o usuário é criança, adolescente, 
+adulto ou idoso
 
-		escreva("\n")
-	} 
-}
+```python
+idade = int(input("Informe sua idade: "))
+
+if idade < 13: 
+    print("Você é criança")
+elif idade >= 13 and idade < 18:
+    print("Você é adolescente")
+elif idade >= 18 and idade < 60:
+    print("Você é adulto")
+else:
+    print("Você é idoso")
 ```
 
 ## **Programando uma calculadora**
 Agora vamos praticar o que aprendemos para criar uma calculadora.
-O programa pede ao usuário que informe dois números reais e a operação a ser executada entre estes números (soma, subtração, multiplicação ou divisão).
+O programa pede ao usuário que informe dois números reais e a operação a ser executada entre estes números (soma, 
+subtração, multiplicação ou divisão).
 Por fim, será exibido o resultado da operação entre os dois números. 
 
-```
-programa
-{
-	funcao inicio()
-	{
-		caracter operador
-		
-		real resultado = 0.0, operando1, operando2
+```python
+operando_1 = int(input("Digite o primeiro número: "))
+operando_2 = int(input("Digite o segundo número: "))
 
-		escreva("Digite o primeiro número: ")
-		leia(operando1)
+operador = input("Agora digite uma das operações ( + - * / ): ")
+resultado = None
 
-		escreva("Digite o segundo número: ")
-		leia(operando2)
+# Verifica qual foi a operação selecionada
 
-		escreva("\n")
-		
-		escreva("Agora digite uma das operações ( + - * / ): ")
-		leia(operador)
+if operador == "+":
+    resultado = operando_1 + operando_2
+elif operador == "-":
+    resultado = operando_1 - operando_2
+elif operador == "*":
+    resultado = operando_1 * operando_2
+elif operador == "/":
+    resultado = operando_1 / operando_2
+else:
+    print("Operador inválido")
 
-		/* Verifica qual foi a operação selecionada */
-		
-		se (operador == '+')
-		{
-			resultado = operando1 + operando2
-		}
-		senao  se(operador == '-')
-		{
-			resultado = operando1 - operando2
-		}
-		senao se(operador == '/')
-		{
-			resultado = operando1 / operando2
-		}
-		senao se(operador == '*')
-		{
-			resultado = operando1 * operando2
-		}	
-
-		limpa()
-		
-		escreva("Resultado:\n\n")
-		escreva(operando1, " ", operador, " ", operando2, " = ", resultado)
-		
-		escreva("\n")
-	}
-}
+print("\nResultado:")
+print(operando_1, " ", operador, " ", operando_2, " = ", resultado)
 ```
 
-> Podemos utilizar também o comando EscolheCaso para o programa da calculadora.
+> **Nota 1:** `None` é um valor que significa vazio. Na variável `resultado`, no primeiro momento, 
+> estamos usando um tipo vazio: `<class 'NoneType'>`
 
-No momento de selecionar a operação, poderíamos fazer da seguinte forma:
-```
-escolha (operador)
-	caso ('+')
-	{
-		resultado = operando1 + operando2	
-	}
-	caso('-')
-	{
-		resultado = operando1 - operando2
-	}
-	caso('/')
-	{
-		resultado = operando1 / operando2	
-	}
-	caso('*')
-	{
-		resultado = operando1 * operando2
-	}	
-```
+> **Nota 2:** Usamos o `\n` para pular uma linha
+
 
 ## **Laços de Repetição**
 Para repetir operações e não ser necessário fazer uma por uma, podemos utilizar estruturas chamadas de **laços de repetição**.
 
 ### Comando para (for)
-Repete as instruções controlado por uma variável numérica que percorre os valores, entre dois limites, utilizando o passo definido.
-Caso o passo não seja definido, o passo é de mais ou menos uma unidade de forma a poder percorrer o intervalo entre o valor inicial, e o final de forma crescente, ou decrescente.
+Repete as instruções controlado por uma variável numérica que percorre os valores, entre dois limites, utilizando o 
+passo definido.
+Caso o passo não seja definido, o passo é de mais ou menos uma unidade de forma a poder percorrer o intervalo entre o
+valor inicial, e o final de forma crescente, ou decrescente.
+
+Exemplo:
+
+```python
+numero = int(input("Informe um número para ver sua tabuada: "))
+
+for contador in range(1, 11): 
+    resultado = numero * contador 
+    print (numero, " X ", contador, " = ", resultado , "\n")
 
 ```
-programa
-{
-	funcao inicio()
-	{
-		inteiro numero, resultado, contador
-		
-		escreva("Informe um número para ver sua tabuada: ")
-		leia(numero)
 
-		limpa()
-		
-		para (contador = 1; contador <= 10; contador++) 
-		{
-			resultado = numero * contador 
-			escreva (numero, " X ", contador, " = ", resultado , "\n")
-		}
-	}
-}
-```
+> **Nota:** A função `range` no Python gera uma sequência de números iniciando do primeiro valor passado até o último 
+> (exclusivo), ou seja, aqui estamos trabalhando com o intervalo fechado em 1 e aberto em 11: [1, 11)
 
 ### Comando enquanto (while)
 Repete as instruções enquanto a condição for verdadeira
 
-```
-programa
-{
-	funcao inicio() 
-	{
-		inteiro contador = 1
-		
-		real numero, media, soma = 0.0
+Exemplo: Dado 5 números informados pelo usuário, vamos exibir sua média
 
-		// Laço que verifica se já foram informados 10 valores
-		enquanto(contador <= 10) 
-		{
-			limpa()
-			escreva("Digite o ", contador, "º número: ")
-			leia(numero)
+```python
+contador = 1
+soma = 0
 
-			// A variavel soma é o acumulador deste exemplo
-			soma = soma + numero
-			// Incrementa o contador
-			contador = contador + 1 
-		}
-		media = soma / 10
-		limpa()
-		escreva("A média dos números é: ", media, "\n")
-	}
-}
+# Laço que verifica se já foram informados 5 valores
+while contador <= 5:
+    numero = int(input(f"Digite o {contador}º número: "))
+
+    # A variavel soma é o acumulador deste exemplo
+    soma = soma + numero
+    # Incrementa o contador
+    contador = contador + 1
+media = soma / 5
+print("A média dos números é: ", media, "\n")
+
 ```
 
-> A estrutura de repetição **enquanto** permite que sejam feitos testes com mais de uma condição.
+> A estrutura de repetição **enquanto (while)** permite que sejam feitos testes com mais de uma condição.
 
 Veja o exemplo abaixo:
 
@@ -437,62 +446,59 @@ Exemplo: função para realizar o cálculo da média de duas notas.
 
 > Vantagens: reutilização, redução de código duplicado, decomposição do problema em pequenas partes, entre outras.
 
-A declaração da função no Portugol Studio é feita com a palavra reservada **funcao**, seguida do tipo de retorno. Quando não colocamos o tipo de retorno, o Portugol assume que é vazio.
+A declaração da função em Python é feita com a palavra reservada **def**, seguida do nome da função, parênteses para
+conter os argumentos e por fim os dois pontos para indicar o bloco com o conteúdo da função.  
 
+```python
+def minha_funcao():
+    pass
 ```
-programa
-{
-	funcao inicio()
-	{
-		// Chama o procedimento
-		mensagem("Bem Vindo")
 
-		// Chama a função no escreva
-		escreva("O resultado do primeiro cálculo é: ", calcula (3.0, 4.0))	
-		escreva("\nO resultado do segundo cálculo é: ", calcula (7.0, 2.0), "\n")
-		mensagem("Tchau")
-	}
+Exemplo:
 
-	funcao mensagem (cadeia texto)
-	{
-		inteiro i
-		// Insere uma linha antes do texto da mensagem		
-		para(i = 0; i < 50; i++)
-		{
-		  escreva ("-")
-		}
+Vamos fazer uma função que calcula a média e outra função que exibe um texto na tela formatado.
+No final, vamos chamar as funções para exibir o resultado.
 
-		// escreve a mensagem
-		escreva ("\n", texto, "\n")
-		// Insere uma linha após o texto da mensagem
-		para(i = 0; i < 50; i++)
-		{
-		  escreva ("-")
-		}
-		escreva("\n")
-	}
+```python
+def mensagem(texto):
+    # Insere uma linha antes do texto da mensagem
+    for i in range(50):
+      print ("-", end='')
 
-	// Função que realiza um cálculo e retorna o resultado
-	funcao real calcula (real a, real b)
-	{
-		real resultado
-		resultado = a * a + b * b
-		retorne resultado
-	}
-}
+    # Escreve a mensagem
+    print("\n", texto)
+
+    # Insere uma linha após o texto da mensagem
+    for i in range(50):
+      print("-", end='')
+
+def calcula_media(a, b):
+    """
+
+    :param a:
+    :param b:
+    :return: Função que calcula
+    """
+    resultado = (a+b)/2
+    return resultado
+
+
+print("O resultado do primeiro cálculo é: ", calcula_media(12, 6))
+print("O resultado do segundo cálculo é: ", calcula_media(10, 20), "\n")
+mensagem("Fim da excução")
 ```
 
 ## **Comentários**
 
-Comentários são linhas que você pode escrever e quando o seu programa for executado a linguagem vai ignorar, não tratando como se fosse um comando a ser executado. 
-Todas as linhas que começam com // no Portugol são comentários.
+Comentários são linhas que você pode escrever e quando o seu programa for executado a linguagem vai ignorar, não 
+tratando como se fosse um comando a ser executado. 
+Todas as linhas que começam com # em Python são comentários.
 
 Exemplo:
 
-```
-// Este é um comentário
-logico esta_chovendo = verdadeiro
-se esta_chovendo {
-   escreval("Levar guarda-chuva")
-}
+```python
+# Este é um comentário
+esta_chovendo = True
+if esta_chovendo:
+   print("Levar guarda-chuva")
 ```
