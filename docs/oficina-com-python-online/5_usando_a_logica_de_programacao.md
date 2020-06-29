@@ -11,8 +11,6 @@ Tomadas de decisões são indicadas por caixas especiais, possibilitando ao flux
 
 * **Pseudocódigo, Portugol ou código:** lógica em forma de texto
 
-![Algoritmo - Portugol](https://github.com/WoMakersCode/oficina-logica-de-programacao/blob/master/images/image4.png)
-
 > Pseudocódigo é uma maneira genérica de se escrever um algoritmo sem ter que escrever em nenhuma sintaxe nativa de uma 
 >linguagem de programação. Sendo permitido inclusive ser escrito em sua linguagem nativa (como o português)
 
