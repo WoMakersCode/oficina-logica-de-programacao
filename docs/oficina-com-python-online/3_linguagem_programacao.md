@@ -1,3 +1,5 @@
+# Linguagem de programação
+
 Os computadores foram criados com o propósito de facilitar o trabalho humano fazendo tarefas para nós!
 Assim, precisamos aprender como nos comunicar com ele. De forma análoga, se você é um brasileiro que fala português 
 mas não entende nada de russo, você não irá conseguir se comunicar de maneira efetiva com um nativo da Rússia.

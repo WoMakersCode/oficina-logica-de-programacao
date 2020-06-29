@@ -1,3 +1,5 @@
+# Usando a lógica de programação
+
 Podemos externalizar nossa lógica de computação de diferentes formas. 
 
 As mais famosas são através de:

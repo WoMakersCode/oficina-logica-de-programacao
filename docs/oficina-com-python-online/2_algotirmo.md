@@ -1,3 +1,5 @@
+# Algoritmo
+
 O algoritmo representa uma sequência finita de passos a serem executados com o objetivo de resolver um problema.
 
 Passos:
