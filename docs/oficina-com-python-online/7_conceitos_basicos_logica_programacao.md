@@ -419,6 +419,8 @@ for contador in range(1, 11):
 ### Comando enquanto (while)
 Repete as instruções enquanto a condição for verdadeira
 
+> A estrutura de repetição **enquanto (while)** permite que sejam feitos testes com mais de uma condição.
+
 Exemplo: Dado 5 números informados pelo usuário, vamos exibir sua média
 
 ```python
@@ -434,14 +436,9 @@ while contador <= 5:
     # Incrementa o contador
     contador = contador + 1
 media = soma / 5
-print("A média dos números é: ", media, "\n")
+print("A média dos números é: ", media)
 
 ```
-
-> A estrutura de repetição **enquanto (while)** permite que sejam feitos testes com mais de uma condição.
-
-Veja o exemplo abaixo:
-
 
 ## **Função**
 Função é um trecho de código que busca resolver um problema específico.
@@ -477,12 +474,6 @@ def mensagem(texto):
       print("-", end='')
 
 def calcula_media(a, b):
-    """
-
-    :param a:
-    :param b:
-    :return: Função que calcula
-    """
     resultado = (a+b)/2
     return resultado
 
